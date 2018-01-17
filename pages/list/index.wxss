@@ -1,0 +1,59 @@
+/* pages/list/list.wxss */
+.weui-cells::after,
+.weui-cells::before {
+    content: none;
+}
+.weui-uploader__bd {
+    padding: 30rpx 15px;
+    margin: 0;
+}
+.weui-uploader__bd .weui-uploader__input-box {
+    margin: 0;
+}
+.weui-cells__title {
+	margin: 0;
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 14px;
+}
+.weui-uploader__file {
+    width: 22%;
+    height: 168rpx;
+    margin-right: 4%;
+    margin-bottom: 14rpx;
+    position: relative;
+}
+
+image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.weui-uploader__file:nth-child(4n) {
+    margin-right: 0;
+}
+
+.weui-uploader__file .weui-uploader__img  {
+    width: 100%;
+    height: 100%;
+}
+.del-img {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    bottom: 0;
+}
+button[type="primary"] {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  height: 98rpx;
+  line-height: 98rpx;
+  margin: 0;
+  border-radius: 10rpx;
+  background: #ff4444;
+}

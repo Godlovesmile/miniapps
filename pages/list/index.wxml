@@ -1,0 +1,32 @@
+<!--pages/list/list.wxml-->
+
+<view class="upload-container">
+  <!-- 上传图片 -->
+  <view class="weui-cells__title">上传图片{{imageList.length}}/9</view>
+  <view class="weui-cells weui-cells_after-title">
+		<view class="weui-uploader__bd">
+		    <view class="weui-uploader__files">
+		        <block wx:for="{{imageList}}" wx:for-item="image">
+		            <view class="weui-uploader__file">
+		                <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+		                <view class="del-img" data-src="{{image}}" bindtap="delImage">删除</view>
+		            </view>
+		        </block>
+		    </view>
+		    <view class="weui-uploader__input-box" wx:if="{{!(imageList.length == 9)}}">
+		        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+		    </view>
+		</view>
+	</view>
+
+  <!-- 编辑内容 -->
+  <view class="weui-cells__title">编辑内容</view>
+	<view class="weui-cells weui-cells_after-title">
+		 <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <textarea show-confirm-bar="false" value="{{content}}" class="weui-textarea" bindinput="bindTextArea" placeholder="请输入文本" />
+            </view>
+        </view>
+	</view>
+</view>
+<button type='primary'>提交</button>

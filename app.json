@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/index",
+    "pages/user/index",
+    "pages/topic/index",
+    "pages/goods-details/index",
+    "pages/more-rating/index",
+    "pages/orders/index",
+    "pages/coupons/index",
+    "pages/orders-detail/index",
+    "pages/to-pay-order/index",
+    "pages/address/index",
+    "pages/add-addr/index",
+    "pages/rating/index",
+    "pages/serach/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ececec",
+    "navigationBarTitleText": "易交"
+  },
+  "tabBar": {
+    "selectedColor": "#ff4444",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index-select.png"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "text": "上传",
+        "iconPath": "images/tabbar/add.png",
+        "selectedIconPath": "images/tabbar/add-select.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user-select.png"
+      }
+    ]
+  }
+}
